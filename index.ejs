@@ -1,0 +1,137 @@
+<% //try{
+   var path = getPath(filename); %>
+  <%- include(path.relative+'template/_header', {path: path}) %>
+
+    <main>
+      <%- include(path.relative+'module/_main_visual_slick', {path: path}) %>
+
+        <section class="top_lead">
+          <div class="lead_bg">
+            <figure>
+              <img src="/wp-content/uploads/top_bg001.png" alt="創業昭和36年 表面処理の老舗におまかせ下さい">
+            </figure>
+          </div>
+          <div class="lead_txt">
+            <h2>創業昭和36年 表面処理の老舗におまかせ下さい</h2>
+            <div class="row">
+              <div class="col span_12 pc-text-center">
+                <p>
+                  製造メーカーの生産拠点が海外へシフトし、「日本のものづくりの空洞化」が叫ばれるようになり久しいですが、<br class="pc-only" />
+                  製造現場の品質に対するこだわりや、短納期・低コストを実現する技術力は、<br class="pc-only" />
+                  実に長い職人文化の賜物であり、一朝一夕で取って代われるものではありません。<br />
+                  当社は創業以来、一貫して「メイドインジャパン」にこだわり、<br class="pc-only" />
+                  より「高品質」「短納期」「低コスト」の追求に取り組んでまいりました。
+                </p>
+                <p>
+                  今日においてもその想いを変えることなく、多様化し続ける市場ニーズに応えるために、<br class="pc-only" />
+                  皆様のビジネスパートナーとして、ものづくりに真摯に取り組む企業のひとつとして、<br class="pc-only" />
+                  長年培った「技」と「心」を次世代に引き継ぐべく日々従事しております。
+                </p>
+                <p class="more">
+                  <a href="/company/" class="add_arrow">MORE</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <%- include(path.relative+'module/_th03_bnr', {path: path}) %>
+
+          <section class="top_item">
+            <div class="container gutters">
+              <h2>その他コンテンツ</h2>
+              <div class="row">
+                <div class="col span_4">
+                  <a href="/category/sample/">
+                    <figure>
+                      <img src="/wp-content/uploads/top_img003.jpg" alt="製作事例" />
+                      <h3>製作事例</h3>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col span_4">
+                  <a href="/recruit/">
+                    <figure>
+                      <img src="/wp-content/uploads/top_img004.jpg" alt="求人情報" />
+                      <h3>求人情報</h3>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col span_4">
+                  <a href="/q_a/">
+                    <figure>
+                      <img src="/wp-content/uploads/top_img005.jpg" alt="Q&amp;A" />
+                      <h3>Q&amp;A</h3>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="top-ct-one">
+            <div class="container news typeB">
+              <div>
+                <div class="heading">
+                  <h2 class="text-left">INFORMATION</h2>
+                </div>
+                <div class="content">
+                  <dl>
+                    <dt>2017/00/00</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>2017/00/00</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>2017/00/00</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>2017/00/00</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>2017/00/00</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="row sp-hide">
+              <div class="col span_12">
+                <figure>
+                  <img src="/wp-content/uploads/top_bg004.png" alt="INFORMATION">
+                </figure>
+              </div>
+            </div>
+        </section>
+
+        <section class="top-ct-two">
+          <div class="container gutters">
+            <div class="row reverse shopinfo">
+              <div class="col span_4">
+                <figure>
+                  <img src="/wp-content/uploads/top_img006.jpg" alt="有限会社 半田鍍金工業所" />
+                </figure>
+              </div>
+              <div class="col span_8">
+                <h2 class="text-left">有限会社 半田鍍金工業所</h2>
+                <dl class="dl-horizontal">
+                  <dt>住所</dt>
+                  <dd>〒189-0011 <br class="sp-only" />東京都東村山市恩多町5丁目43番地14号</dd>
+                  <dt>TEL</dt>
+                  <dd><span class="pc-only">042-393-0960</span><a href="tel:0423930960" class="sp-only">042-393-0960</a></dd>
+                  <dt>FAX</dt>
+                  <dd>042-398-1977</dd>
+                  <dt>アドレス</dt>
+                  <dd><a href="mailto:info@handa-platingworks.co.jp">info@handa-platingworks.co.jp</a></dd>
+                  <dt>営業時間</dt>
+                  <dd>8:00～17:00</dd>
+                  <dt>定休日</dt>
+                  <dd>毎週土曜・日曜日</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          <%- include(path.relative+'module/_contact_info', {path: path}) %>
+
+    </main>
+
+    <%- include(path.relative+'template/_footer', {path: path}) %>
+      <% //}catch(e){ console.log(e) } %>
